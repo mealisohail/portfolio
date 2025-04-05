@@ -9,8 +9,6 @@ import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
 import { Awards } from "@/features/profile/components/awards";
-import { Blog } from "@/features/profile/components/blog";
-import { Certifications } from "@/features/profile/components/certifications";
 import { Experiences } from "@/features/profile/components/experiences";
 import { Header } from "@/features/profile/components/header";
 import { HeaderMotion } from "@/features/profile/components/header-motion";
@@ -78,9 +76,6 @@ export default function Page() {
             <TeckStack />
             <Pattern />
 
-            {/* <Blog />
-            <Pattern /> */}
-
             <Experiences />
             <Pattern />
 
@@ -89,9 +84,6 @@ export default function Page() {
 
             <Awards />
             <Pattern />
-
-            {/* <Certifications />
-            <Pattern /> */}
           </main>
 
           <Footer />
