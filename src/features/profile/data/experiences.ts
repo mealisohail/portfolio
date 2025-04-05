@@ -197,7 +197,6 @@ export const EXPERIENCES: Experience[] = [
         title: "Cross Platform Developer",
         year: "2024-2025",
         employmentType: "Part-time",
-        icon: "code",
         description:
           "- Built a real-time app that suggests outfit and accessories based on user's preference, clothing items, and occasion.\n- Integrated machine learning algorithms to analyze user's fashion style and provide personalized recommendations.\n- Developed a chatbot that assists users in creating outfits and provides styling tips.\n- Created a social feature that allows users to share their outfits and follow other users for fashion inspiration.",
         icon: "code",
