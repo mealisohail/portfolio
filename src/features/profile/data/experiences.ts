@@ -136,7 +136,7 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Part-time",
         description:
           "- Built a dashboard frontend and backend that allows admins to trim videos, with all the cuts and video validation functionality.\n- Implemented video trimming functionality with all the cuts and video validation, allowing admins to trim videos with ease.\n- Created a rating and review system that allows users to rate and review their experience with the platform.",
-        icon: "design",
+        icon: "code",
         skills: [
           "React",
           "Express.js",
@@ -157,7 +157,7 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Part-time",
         description:
           "- Led the development of a digital card platform that allows users to create and manage their digital cards, perform transactions, and track their spending.\n- Integrated multiple payment gateways such as Razorpay, Stripe, and PayPal to enable seamless transactions.\n- Implemented multi-user type functionality, allowing users to create and manage different types of cards, such as credit cards, debit cards, and loyalty cards.\n- Developed a feature that allows users to add multiple cards to their digital wallet, and perform transactions using any of the added cards.\n- Integrated NFC technology to enable contactless payments.\n- Created a rating and review system that allows users to rate and review their experience with the platform.",
-        icon: "design",
+        icon: "code",
         skills: [
           "React",
           "Express.js",
@@ -179,7 +179,7 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Part-time",
         description:
           "- Built a real-time mentorship platform that allows users to book appointments with mentors and conduct video calls.\n- Integrated Google Sign-In and Razorpay payment gateway for seamless user experience and secure transactions.\n- Developed a feature that allows users to schedule appointments with mentors and receive reminders.\n- Created a rating and review system that allows users to rate and review their mentorship experiences.\n- Integrated Stream video conferencing API to facilitate video calls between mentors and mentees.",
-        icon: "design",
+        icon: "code",
         skills: [
           "React",
           "Express.js",
@@ -197,6 +197,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Cross Platform Developer",
         year: "2024-2025",
         employmentType: "Part-time",
+        icon: "code",
         description:
           "- Built a real-time app that suggests outfit and accessories based on user's preference, clothing items, and occasion.\n- Integrated machine learning algorithms to analyze user's fashion style and provide personalized recommendations.\n- Developed a chatbot that assists users in creating outfits and provides styling tips.\n- Created a social feature that allows users to share their outfits and follow other users for fashion inspiration.",
         icon: "code",
