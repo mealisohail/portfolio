@@ -1,6 +1,4 @@
-import Link from "next/link";
 
-import { ChanhDaiWordmark } from "@/components/mealisohail-wordmark";
 import { Footer } from "@/components/footer";
 import { NavItemGitHub } from "@/components/nav-item-github";
 import { NavItemRSS } from "@/components/nav-item-rss";
@@ -20,9 +18,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 "bg-zinc-950/0.75 bg-[image:radial-gradient(var(--pattern-foreground)_1px,_transparent_0)] bg-[size:8px_8px] [--pattern-foreground:var(--color-zinc-950)]/5 sm:bg-[size:10px_10px] dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
               )}
             >
-              <Link href="/" className="-translate-x-px">
-                <ChanhDaiWordmark className="h-16" />
-              </Link>
 
               <div className="flex translate-x-px items-center gap-2 rounded-bl-2xl bg-background ring ring-grid ring-inset">
                 <NavItemRSS />
