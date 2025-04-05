@@ -5,9 +5,9 @@ import { USER } from "@/data/user";
 import { FlipSentences } from "@/registry/flip-sentences";
 
 import { AliAvatar } from "./ali-avatar";
-import { SohailAliCoverHello } from "./sohailali-cover-hello";
 import { Nav } from "./nav/nav";
 import { NavDropdown } from "./nav/nav-dropdown";
+import { SohailAliCoverHello } from "./sohailali-cover-hello";
 import { VerifiedIcon } from "./verified-icon";
 
 export function Header() {

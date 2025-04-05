@@ -2,6 +2,7 @@
 
 import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 import React, { useCallback, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,6 @@ import {
   AppleHelloEnglishEffect,
   AppleHelloHindiEffect,
 } from "@/registry/apple-hello-effect";
-import Image from "next/image";
 
 const layers = ["hhello", "hello", "ali-wordmark"] as const;
 
