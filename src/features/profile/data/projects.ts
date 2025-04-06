@@ -3,7 +3,7 @@ import { Project } from "../types/projects";
 export const PROJECTS: Project[] = [
   {
     id: "dev-finder",
-    title: "Dev Finder Pair Programming Platform",
+    title: "Dev Finder, Pair Programming Platform",
     time: "03.2024 - 04.2024",
     link: "https://github.com/mealisohail/dev-finder",
     tags: [
