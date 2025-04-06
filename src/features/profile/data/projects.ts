@@ -7,7 +7,6 @@ export const PROJECTS: Project[] = [
     time: "03.2024 - 04.2024",
     link: "https://github.com/mealisohail/dev-finder",
     tags: [
-      "Next.js 15",
       "Next.js",
       "Tailwind CSS v3",
       "Tailwind CSS",
@@ -25,14 +24,28 @@ export const PROJECTS: Project[] = [
     "Build a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools.\n- Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication.\n- Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS.\n- Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.",
   },
   {
+    id: "medibuddy",
+    title: "MediBuddy, Medicine Reminder App",
+    time: "03.2025 - 04.2025",
+    link: "https://github.com/mealisohail/medibuddy",
+    tags: [
+      "React Native",
+      "Expo",
+      "Typescript",
+      "Expo Local Authentication",
+      "Expo Local Notifications",
+      "AsyncStorage",
+    ],
+    description:
+    "Built a medicine reminder app using React Native (Expo), enabling users to manage medications with intuitive add, view, and delete functionality.\n- Implemented local notifications to remind users to take their medicines at scheduled times, enhancing adherence and health tracking and medicine monitoring.\n- Secured the application with local authentication, ensuring data privacy and restricted access for better user safety.\n- Utilized AsyncStorage for offline data persistence, allowing consistent user experience without internet dependency.\n- Designed a clean and user-friendly interface to simplify medication management, improving usability and engagement for daily health routines.",
+  },
+  {
     id: "deskops",
     title: "DeskOps, Task Management",
     time: "10.2023 - 11.2023",
     link: "https://github.com/mealisohail/DeskOps",
     tags: [
-      "Open Source",
-      "Next.js 15",
-      "Next.js 14",
+      "Next.js",
       "React",
       "Tailwind CSS v4",
       "Radix UI",
@@ -53,6 +66,7 @@ export const PROJECTS: Project[] = [
     time: "01.2024 - 03.2024",
     link: "https://github.com/mealisohail/pick-mobile",
     tags: [
+      "Freelance Project",
       "Nodejs",
       "Express",
       "MongoDB",
@@ -70,6 +84,7 @@ export const PROJECTS: Project[] = [
     time: "07.2024 - 09.2024",
     link: "https://askitall.co/",
     tags: [
+      "Freelance Project",
       "Nodejs",
       "Express",
       "MongoDB",
@@ -90,7 +105,7 @@ export const PROJECTS: Project[] = [
     time: "10.2024 - Present",
     link: "https://github.com/mealisohail/nfccart-frontend",
     tags: [
-      "University Project",
+      "Freelance Project",
       "React",
       "Express.js",
       "Next.js",
@@ -112,7 +127,7 @@ export const PROJECTS: Project[] = [
     time: "02.2025 - Present",
     link: "https://github.com/mealisohail/skyljo-frontend",
     tags: [
-      "University Project",
+      "Freelance Project",
       "React",
       "Express.js",
       "Next.js",
