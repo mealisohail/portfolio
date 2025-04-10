@@ -29,7 +29,7 @@ export const USER = {
   about: `
 Hello, World! I am Sohail Akhtar Ali, a Software Developer & Full Stack Developer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.\n
 With 1+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.\n
-One of my key projects, [TruScholar Wallet](https://linkmix.co/36379161), Securely issue and manage tamper-proof academic credentials while ensuring seamless user experience across Android, iOS, and Web. Developed TruScholar Wallet leveraging Hyperledger Indy for blockchain-powered credential management. Led development of the React Native app with a Node.js backend, integrating AI-driven resume builder, Digilocker, and cloud storage. Enabled secure verification of academic achievements, enhanced document accessibility, and improved scalability with TypeScript-based development
+One of my key projects, [Dev Finder](https://github.com/mealisohail/dev-finder), is a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools. Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication. Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS. Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.
 .\n
 Let's connect and collaborate!
   `,

@@ -106,7 +106,7 @@ export const EXPERIENCES: Experience[] = [
       {
         id: "30d3a9fb-021d-452a-9d27-83655369b4b9",
         title: "React Developer",
-        year: "03.2024 - present",
+        year: "08.2022 - 11.2022",
         employmentType: "Internship",
         icon: "code",
         description:
