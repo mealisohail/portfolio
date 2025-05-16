@@ -14,7 +14,7 @@ export const USER = {
   phoneNumber: "KzkxNzI0OTA0NzEwNQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "YWxpc29oYWlsMjQ0OEBnbWFpbC5jb20=", // base64 encoded
   // email: "dai[at]mealisohail[dot]com",
-  website: "https://mealisohail.com",
+  website: "https://mealisohail.vercel.app",
   otherWebsites: [
   ],
   dateOfBirth: "2003-06-17", // YYYY-MM-DD

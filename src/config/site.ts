@@ -13,7 +13,7 @@ export const META_THEME_COLORS = {
   dark: "#09090b",
 };
 
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/mealisohail/sohailali.com";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/mealisohail";
 
 export const VIETNAM_HOLIDAYS = [
   "2025-03-08", // Ngày Quốc tế Phụ nữ
