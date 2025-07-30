@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
       "NGINX",
     ],
     description:
-    "Build a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools.\n- Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication.\n- Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS.\n- Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.",
+    "- Build a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools.\n- Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication.\n- Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS.\n- Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.",
   },
   {
     id: "medibuddy",
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
       "AsyncStorage",
     ],
     description:
-    "Built a medicine reminder app using React Native (Expo), enabling users to manage medications with intuitive add, view, and delete functionality.\n- Implemented local notifications to remind users to take their medicines at scheduled times, enhancing adherence and health tracking and medicine monitoring.\n- Secured the application with local authentication, ensuring data privacy and restricted access for better user safety.\n- Utilized AsyncStorage for offline data persistence, allowing consistent user experience without internet dependency.\n- Designed a clean and user-friendly interface to simplify medication management, improving usability and engagement for daily health routines.",
+    "- Built a medicine reminder app using React Native (Expo), enabling users to manage medications with intuitive add, view, and delete functionality.\n- Implemented local notifications to remind users to take their medicines at scheduled times, enhancing adherence and health tracking and medicine monitoring.\n- Secured the application with local authentication, ensuring data privacy and restricted access for better user safety.\n- Utilized AsyncStorage for offline data persistence, allowing consistent user experience without internet dependency.\n- Designed a clean and user-friendly interface to simplify medication management, improving usability and engagement for daily health routines.",
   },
   {
     id: "deskops",
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
       "PostgreSQL",
     ],
     description:
-      "Create a comprehensive task and project management system similar to Trello, supporting team collaboration, organization management, and payment integration.\n- Spearheaded the development of DeskOps, implementing authentication, board operations, list & card management, activity logging, and Stripe-powered subscription services.\n- Launched a feature-rich task management platform, improving team productivity and workflow efficiency, while enabling monetization through Stripe subscriptions.",
+      "- Create a comprehensive task and project management system similar to Trello, supporting team collaboration, organization management, and payment integration.\n- Spearheaded the development of DeskOps, implementing authentication, board operations, list & card management, activity logging, and Stripe-powered subscription services.\n- Launched a feature-rich task management platform, improving team productivity and workflow efficiency, while enabling monetization through Stripe subscriptions.",
   },
   {
     id: "jark-pick",
@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
       "AWS"
     ],
     description:
-      "Pick Outfit Suggester is a React Native app designed to suggest outfits and accessories based on user preferences, clothing items, and occasions. Launched in 2024, it leverages machine learning to provide personalized fashion recommendations to enhance users' style.\n- Developed an AI-driven suggestion engine to analyze fashion trends and user input\n- Created a seamless user interface for easy navigation and outfit selection\n- Integrated social sharing features to allow users to showcase their fashion choices",
+      "- Pick Outfit Suggester is a React Native app designed to suggest outfits and accessories based on user preferences, clothing items, and occasions. Launched in 2024, it leverages machine learning to provide personalized fashion recommendations to enhance users' style.\n- Developed an AI-driven suggestion engine to analyze fashion trends and user input\n- Created a seamless user interface for easy navigation and outfit selection\n- Integrated social sharing features to allow users to showcase their fashion choices",
   },
   {
     id: "jark-aia",
@@ -97,7 +97,7 @@ export const PROJECTS: Project[] = [
       "AWS"
     ],
     description:
-      "Developed a comprehensive appointment scheduling and payment system for mentors and mentees, integrated with video conferencing features.\n- Designed and implemented a user-friendly interface for seamless appointment booking and management\n- Integrated video conferencing capabilities for real-time communication between mentors and mentees\n- Implemented secure payment processing to facilitate transactions between users",
+      "- Developed a comprehensive appointment scheduling and payment system for mentors and mentees, integrated with video conferencing features.\n- Designed and implemented a user-friendly interface for seamless appointment booking and management\n- Integrated video conferencing capabilities for real-time communication between mentors and mentees\n- Implemented secure payment processing to facilitate transactions between users",
   },
   {
     id: "nfcCart",

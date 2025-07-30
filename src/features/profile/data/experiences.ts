@@ -2,6 +2,53 @@ import { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Signzy",
+    companyLogo: "/images/companies/signzy.png",
+    positions: [
+       {
+        id: "20f8bfe5-b6a3243-4b0d-ac2f-6fccd50d417e",
+        title: "SDE-1 (Full Stack Engineer)",
+        year: "07.2025 - Present",
+        employmentType: "Full-time",
+        icon: "code",
+        description:
+          "Part of contract360 , a growing and innovative team working on transforming contract mangement processes.",
+        skills: [
+          "React.js",
+          "Next.js",
+          "React Native",
+          "TypeScript",
+          "Redux",
+          "React Query",
+          "SSE",
+          "Express.js",
+          "Node.js",
+          "MongoDB",
+          "Redis",
+          "Razorpay SDK & APIs",
+          "Solidity",
+          "Ethereum",
+          "Web3.js",
+          "AWS",
+          "Nginx",
+          "Docker",
+          "S3",
+          "Digilocker APIs",
+          "Figma",
+          "Postman",
+          "REST APIs",
+          "Material UI",
+          "Bulls Queue",
+          "Redis",
+          "GitLab",
+          "Git",
+        ],
+        expanded: false,
+      },
+    ],
+    current: true,
+  },
+  {
     company: "TruScholar",
     companyLogo: "/images/companies/truscholar.png",
     positions: [
@@ -23,7 +70,7 @@ export const EXPERIENCES: Experience[] = [
       {
         id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
         title: "Full Stack Developer",
-        year: "07.2024 - Present",
+        year: "07.2024 - 07.2025",
         employmentType: "Full-time",
         icon: "code",
         description:
@@ -58,7 +105,7 @@ export const EXPERIENCES: Experience[] = [
           "GitLab",
           "Git",
         ],
-        expanded: true,
+        expanded: false,
       },
       {
         id: "cedd7adb-4118-4085-9983-ae00530b49e2",
@@ -97,7 +144,7 @@ export const EXPERIENCES: Experience[] = [
         ],
       },
     ],
-    current: true,
+    current: false,
   },
   {
     company: "Upcred",
@@ -121,7 +168,7 @@ export const EXPERIENCES: Experience[] = [
           "Docker",
           "PostgreSQL",
         ],
-        expanded: true,
+        expanded: false,
       },
     ],
     current: false,
@@ -244,7 +291,7 @@ export const EXPERIENCES: Experience[] = [
         year: "07.2018 - 05.2020",
         icon: "school",
         description:
-          "n- Completed 12th standard specialized in science with 85.23%.",
+          "- Completed 12th standard specialized in science with 85.23%.",
         skills: [
           "Physics",
           "Chemistry",
@@ -259,7 +306,7 @@ export const EXPERIENCES: Experience[] = [
         year: "07.2017 - 05.2018",
         icon: "school",
         description:
-          "n- Completed 10th standard specialized in science with 81.80%.",
+          "- Completed 10th standard specialized in science with 81.80%.",
         skills: [
           "Physics",
           "Chemistry",

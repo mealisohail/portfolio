@@ -21,9 +21,9 @@ export const USER = {
   jobTitle: "Full Stack Developer",
   jobs: [
     {
-      title: "Full Stack Developer",
-      company: "TruScholar",
-      website: "https://www.truscholar.io/",
+      title: "SDE-1",
+      company: "Signzy",
+      website: "https://www.signzy.com/",
     },
   ],
   about: `
