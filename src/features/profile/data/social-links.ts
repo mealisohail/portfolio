@@ -14,15 +14,21 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: "https://github.com/mealisohail",
   },
   {
-    icon: "/images/link-icons/dailydev.webp",
-    title: "daily.dev",
-    description: "@mealisohail",
-    href: "https://app.daily.dev/mealisohail",
+    icon: "/images/link-icons/leetcode.webp",
+    title: "LeetCode",
+    description: "mealisohail",
+    href: "https://leetcode.com/u/mealisohail/",
   },
   {
-    icon: "/images/link-icons/leetcode.webp",
-    title: "Leetcode",
-    description: "@mealisohail",
-    href: "https://leetcode.com/u/mealisohail/",
-  }
+    icon: "/images/link-icons/gfg.png",
+    title: "GeeksforGeeks",
+    description: "alisohail2448",
+    href: "https://www.geeksforgeeks.org/user/alisohail2448/",
+  },
+  {
+    icon: "/images/link-icons/dailydev.webp",
+    title: "daily.dev",
+    description: "mealisohail",
+    href: "https://app.daily.dev/mealisohail",
+  },
 ];

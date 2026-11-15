@@ -4,21 +4,22 @@ export const USER = {
   displayName: "Sohail Akhtar Ali",
   username: "mealisohail",
   gender: "male",
-  bio: "Creating with code, driven by passion.",
+  bio: "Building reliable systems, end to end.",
   flipSentences: [
-    "Software Engineer",
-    "Full Stack Developer",
-    "Open Source Contributor",
+    "Software Engineer @ Signzy",
+    "Backend · Web · Mobile",
+    "Distributed systems & workflows",
   ],
+  status: "Open to interesting problems",
+  timeZone: "Asia/Kolkata",
   address: "Akot, Maharashtra, India",  
-  phoneNumber: "KzkxNzI0OTA0NzEwNQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "YWxpc29oYWlsMjQ0OEBnbWFpbC5jb20=", // base64 encoded
   // email: "dai[at]mealisohail[dot]com",
   website: "https://mealisohail.vercel.app",
   otherWebsites: [
   ],
   dateOfBirth: "2003-06-17", // YYYY-MM-DD
-  jobTitle: "Full Stack Developer",
+  jobTitle: "Software Engineer",
   jobs: [
     {
       title: "SDE-1",
@@ -27,11 +28,10 @@ export const USER = {
     },
   ],
   about: `
-Hello, World! I am Sohail Akhtar Ali, a Software Developer & Full Stack Developer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.\n
-With 1+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.\n
-One of my key projects, [Dev Finder](https://github.com/mealisohail/dev-finder), is a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools. Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication. Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS. Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.
-.\n
-Let's connect and collaborate!
+Hi, I'm Sohail, a Software Engineer with 2+ years of experience building scalable, fault-tolerant backend systems and the web and mobile apps on top of them.\n
+At [Signzy](https://www.signzy.com/) I work on an enterprise digital contracting platform: Node.js and Fastify services, [Temporal](https://temporal.io/) workflows that recover on their own, worker-based architectures, and SDKs that let clients run the platform inside their own apps. I care about reliability, security and how things behave in production.\n
+Outside work I build tools I want to use myself, like [AgentBuddy](https://agentbuddymac.vercel.app/), a macOS notch app for Claude Code sessions, and [PeerShell](https://peershell.vercel.app), peer-to-peer terminal sharing over WebRTC.\n
+Let's connect and build something together.
   `,
   avatar: "/images/profile.jpg",
   ogImage: "/images/mealisohail-og-image.png",

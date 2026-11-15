@@ -7,7 +7,7 @@ import { TeckStackContent } from "./teck-stack-content";
 
 export function TeckStack() {
   return (
-    <Panel>
+    <Panel id="stack" className="scroll-mt-[4.75rem]">
       <PanelHeader>
         <PanelTitle>Stack</PanelTitle>
       </PanelHeader>

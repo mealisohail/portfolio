@@ -5,9 +5,11 @@ import { USER } from "@/data/user";
 import { FlipSentences } from "@/registry/flip-sentences";
 
 import { AliAvatar } from "./ali-avatar";
+import { CommandMenu } from "./command-menu";
 import { Nav } from "./nav/nav";
 import { NavDropdown } from "./nav/nav-dropdown";
 import { SohailAliCoverHello } from "./sohailali-cover-hello";
+import { StatusLine } from "./status-line";
 import { VerifiedIcon } from "./verified-icon";
 
 export function Header() {
@@ -19,6 +21,7 @@ export function Header() {
         <Nav className="max-sm:hidden" />
 
         <div className="flex items-center gap-2">
+          <CommandMenu />
           <NavItemGitHub />
           <ToggleTheme />
           <NavDropdown className="sm:hidden" />
@@ -33,13 +36,8 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 flex-col">
-          <div className="flex grow items-end mask-r-from-60% pb-1 pl-4">
-            <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none dark:text-zinc-800">
-              {"text-3xl "}
-              <span className="inline dark:hidden">text-zinc-950</span>
-              <span className="hidden dark:inline">text-zinc-50</span>
-              {" font-medium"}
-            </div>
+          <div className="flex grow items-end pb-1.5 pl-4">
+            <StatusLine />
           </div>
 
           <div className="border-t border-grid">

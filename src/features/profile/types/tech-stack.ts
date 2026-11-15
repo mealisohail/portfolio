@@ -2,7 +2,14 @@ export type TechStack = {
   key: string; // Unique identifier used to fetch the corresponding icon
   title: string; // Display name of the technology
   href: string; // Official website URL of the technology
-  categories: string[];
+  group:
+    | "Languages"
+    | "Frontend & Mobile"
+    | "Backend"
+    | "Databases"
+    | "Cloud & DevOps"
+    | "Web3 & Design"
+    | "AI Tools";
   theme?: boolean; // If `true`, the icon changes based on dark and light mode
   // Icon paths:
   // - Default: ./public/tech-stack-icons/[key].svg

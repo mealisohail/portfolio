@@ -27,9 +27,12 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         </h3>
 
         {experience?.current && (
-          <span className="relative flex items-center justify-center">
-            <span className="absolute inline-flex size-3 animate-ping rounded-full bg-success-foreground opacity-50"></span>
-            <span className="relative inline-flex size-2 rounded-full bg-success-foreground"></span>
+          <span className="flex items-center gap-1.5 rounded-full border border-success-foreground/30 bg-success-foreground/10 px-2 py-0.5 font-mono text-[11px] text-success-foreground">
+            <span className="relative flex size-1.5">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-success-foreground opacity-60 motion-reduce:hidden" />
+              <span className="relative inline-flex size-1.5 rounded-full bg-success-foreground" />
+            </span>
+            Current
           </span>
         )}
       </div>

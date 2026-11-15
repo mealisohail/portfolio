@@ -2,6 +2,7 @@
 
 import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import { Noto_Nastaliq_Urdu, Tiro_Devanagari_Marathi } from "next/font/google";
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
 
@@ -13,7 +14,43 @@ import {
   AppleHelloHindiEffect,
 } from "@/registry/apple-hello-effect";
 
-const layers = ["hhello", "hello", "ali-wordmark"] as const;
+const fontMarathi = Tiro_Devanagari_Marathi({
+  weight: "400",
+  subsets: ["devanagari"],
+  display: "swap",
+  preload: false,
+});
+
+const fontUrdu = Noto_Nastaliq_Urdu({
+  weight: "500",
+  subsets: ["arabic"],
+  display: "swap",
+  preload: false,
+});
+
+const layers = ["hhello", "hello", "marathi", "urdu", "ali-wordmark"] as const;
+
+/** Greetings without a hand-drawn path: a soft blur-fade, held briefly. */
+function FadeGreeting({
+  children,
+  className,
+  onDone,
+  ...props
+}: React.ComponentProps<typeof motion.span> & { onDone: () => void }) {
+  return (
+    <motion.span
+      className={cn("block whitespace-nowrap select-none", className)}
+      initial={{ opacity: 0, filter: "blur(6px)", y: 4 }}
+      animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+      exit={{ opacity: 0, filter: "blur(4px)", transition: { duration: 0.4 } }}
+      transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
+      onAnimationComplete={() => setTimeout(onDone, 1100)}
+      {...props}
+    >
+      {children}
+    </motion.span>
+  );
+}
 
 export function Hello() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +69,7 @@ export function Hello() {
         className={cn(
           "absolute top-1/2 h-16 w-full -translate-y-1/2 border-y border-grid transition-all duration-500 sm:h-20",
           {
-            "h-10 sm:h-16": ["hhello", "hello"].includes(
+            "h-10 sm:h-16": ["hhello", "hello", "marathi", "urdu"].includes(
               layers[currentIndex]
             ),
           }
@@ -68,6 +105,30 @@ export function Hello() {
             />
           )}
 
+          {layers[currentIndex] === "marathi" && (
+            <FadeGreeting
+              lang="mr"
+              className={cn(fontMarathi.className, "text-4xl sm:text-6xl")}
+              onDone={nextAnimation}
+            >
+              नमस्कार
+            </FadeGreeting>
+          )}
+
+          {layers[currentIndex] === "urdu" && (
+            <FadeGreeting
+              lang="ur"
+              dir="rtl"
+              className={cn(
+                fontUrdu.className,
+                "-translate-y-1.5 text-3xl leading-[1.9] sm:-translate-y-3 sm:text-5xl sm:leading-[1.9]"
+              )}
+              onDone={nextAnimation}
+            >
+              السلام علیکم
+            </FadeGreeting>
+          )}
+
           {layers[currentIndex] === "ali-wordmark" && (
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -75,10 +136,22 @@ export function Hello() {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <Image src='/images/cover.png' alt="cover"   width={380} height={200}  className="h-16 sm:h-20 hidden [html.dark_&]:block" />
-              <Image src='/images/cover2.png' alt="cover"   width={380} height={200}  className="h-16 sm:h-20 hidden [html.light_&]:block" />
+              <Image
+                src="/images/cover.png"
+                alt="cover"
+                width={380}
+                height={200}
+                className="hidden h-16 sm:h-20 [html.dark_&]:block"
+              />
+              <Image
+                src="/images/cover2.png"
+                alt="cover"
+                width={380}
+                height={200}
+                className="hidden h-16 sm:h-20 [html.light_&]:block"
+              />
             </motion.div>
-          )}     
+          )}
 
           <motion.div
             className="h-full w-px bg-grid"
