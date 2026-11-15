@@ -15,11 +15,12 @@ export function Projects() {
 
       <AccordionPrimitive.Root
         type="single"
-        defaultValue="portfolio-website"
+        defaultValue="agentbuddy"
         collapsible
       >
         <CollapsibleList
           items={PROJECTS}
+          max={4}
           renderItem={(item) => <ProjectItem project={item} />}
         />
       </AccordionPrimitive.Root>

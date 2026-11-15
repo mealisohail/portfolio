@@ -1,6 +1,39 @@
+import agentbuddyImage from "@/../public/images/projects/agentbuddy.png";
+import peershellImage from "@/../public/images/projects/peershell.gif";
+
 import { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
+  {
+    id: "agentbuddy",
+    title: "AgentBuddy, Claude Code in your Mac's notch",
+    time: "11.2026",
+    link: "https://agentbuddymac.vercel.app/",
+    image: agentbuddyImage,
+    tags: ["Swift", "SwiftUI", "macOS", "Claude Code Hooks", "Homebrew"],
+    description:
+      "- Native macOS app that shows every running Claude Code session in the notch: who's working, who's done and who needs you.\n- Detects sessions automatically across Terminal, iTerm2, tmux and VS Code (and forks like Cursor), with no per-project setup.\n- Answer permission requests and Claude's multiple-choice questions right from the notch through a Claude Code `PermissionRequest` hook, which backs up and preserves the user's settings.\n- Live progress per session (one tick per tool call, failures in red), jump-to-tab, and sending prompts into Terminal, iTerm2 or tmux sessions.\n- Fully local, with no network requests. Ships through a one-line installer, a Homebrew cask and GitHub Releases.\n- [Source on GitHub](https://github.com/mealisohail/agentbuddy)",
+  },
+  {
+    id: "peershell",
+    title: "PeerShell, Peer-to-Peer Terminal Sharing",
+    time: "11.2026",
+    link: "https://peershell.vercel.app",
+    image: peershellImage,
+    tags: [
+      "Go",
+      "WebRTC",
+      "pion/webrtc",
+      "xterm.js",
+      "Vite",
+      "Node.js",
+      "TypeScript",
+      "WebSocket",
+      "Docker",
+    ],
+    description:
+      "- Streams a live shell into someone else's browser using a 6-digit pairing code. Traffic flows directly between peers over DTLS-encrypted WebRTC.\n- Go CLI agent built with pion/webrtc and creack/pty runs the shell behind a pseudo-terminal; the browser client uses Vite and xterm.js.\n- Node.js + TypeScript WebSocket signaling server handles only the handshake, so terminal data never passes through the server.\n- Pairing secured with single-use expiring codes, IP rate limiting (5 attempts per minute) and an IP lock after 3 failed attempts.\n- Deployed with Docker on Render (signaling) and Vercel (web), with a one-line install script and unit + integration tests in Go and TypeScript.\n- [Source on GitHub](https://github.com/mealisohail/peershell)",
+  },
   {
     id: "dev-finder",
     title: "Dev Finder, Pair Programming Platform",
@@ -8,20 +41,18 @@ export const PROJECTS: Project[] = [
     link: "https://github.com/mealisohail/dev-finder",
     tags: [
       "Next.js",
-      "Tailwind CSS v3",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Shadcn",
-      "Typescript",
-      "Next Auth",
+      "TypeScript",
+      "NextAuth",
       "Stream Chat",
-      "Get Stream Io",
+      "GetStream.io",
+      "shadcn/ui",
+      "Tailwind CSS",
       "Strapi 5",
       "Docker",
       "NGINX",
     ],
     description:
-    "- Build a real-time, multi-user pair programming platform with secure authentication and seamless collaboration tools.\n- Designed and implemented a Next.js-based system with dynamic room management, participant controls, and real-time communication.\n- Integrated NextAuth.js for secure authentication and modern UI components with Shadcn & Tailwind CSS.\n- Delivered a robust, interactive platform featuring real-time screen sharing, video calls, and chat powered by Stream Chat, significantly enhancing remote coding collaboration.",
+      "- Real-time, multi-user pair programming platform with secure authentication and collaboration tools for remote developers.\n- Next.js system with dynamic room management, participant controls and real-time communication.\n- NextAuth.js for authentication, with UI built on shadcn/ui and Tailwind CSS.\n- Real-time screen sharing, video calls and chat through Stream Chat and GetStream.io.\n- Participant pinning, tag-based browsing and dynamic room creation make sessions easy to find and manage.",
   },
   {
     id: "medibuddy",
@@ -41,7 +72,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "deskops",
-    title: "DeskOps, Task Management",
+    title: "DeskOps, Task Management Platform",
     time: "10.2023 - 11.2023",
     link: "https://github.com/mealisohail/DeskOps",
     tags: [
@@ -55,10 +86,11 @@ export const PROJECTS: Project[] = [
       "Stripe",
       "Vercel",
       "Docker",
-      "PostgreSQL",
+      "MySQL",
+      "RBAC",
     ],
     description:
-      "- Create a comprehensive task and project management system similar to Trello, supporting team collaboration, organization management, and payment integration.\n- Spearheaded the development of DeskOps, implementing authentication, board operations, list & card management, activity logging, and Stripe-powered subscription services.\n- Launched a feature-rich task management platform, improving team productivity and workflow efficiency, while enabling monetization through Stripe subscriptions.",
+      "- Trello-style task and project management platform with team collaboration, organization management and paid plans.\n- Authentication, board operations, list and card management, and activity logging.\n- Stripe-powered subscriptions for monetization.\n- Database designed with Prisma and MySQL to keep data consistent across teams and organizations.\n- Role-based access control (RBAC) for permissions within teams and organizations.",
   },
   {
     id: "jark-pick",

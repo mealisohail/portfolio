@@ -24,7 +24,7 @@ export function ExperiencePositionItem({
               icon={position.icon}
             />
 
-            <h4 className="flex-1 font-heading font-medium text-balance underline-offset-4 group-hover/experience:underline">
+            <h4 className="flex-1 font-heading font-medium text-balance underline-offset-4 decoration-info-foreground/70 group-hover/experience:underline">
               {position.title}
             </h4>
 

@@ -3,12 +3,14 @@ import { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { Confetti } from "@/components/confetti";
 import { Footer } from "@/components/footer";
+import { GridSpotlight } from "@/components/grid-spotlight";
 import { ScrollTop } from "@/components/scroll-top";
 import { SITE_INFO } from "@/config/site";
-import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
 import { Awards } from "@/features/profile/components/awards";
+import { CodingStats } from "@/features/profile/components/coding-stats";
+import { Education } from "@/features/profile/components/education";
 import { Experiences } from "@/features/profile/components/experiences";
 import { Header } from "@/features/profile/components/header";
 import { HeaderMotion } from "@/features/profile/components/header-motion";
@@ -59,7 +61,8 @@ export default function Page() {
       <HeaderMotion />
 
       <div className="max-w-screen overflow-x-hidden">
-        <div className="mx-auto px-4 md:max-w-3xl">
+        <div className="relative mx-auto px-4 md:max-w-3xl">
+          <GridSpotlight />
           <Header />
           <Pattern />
 
@@ -76,10 +79,16 @@ export default function Page() {
             <TeckStack />
             <Pattern />
 
+            <CodingStats />
+            <Pattern />
+
             <Experiences />
             <Pattern />
 
             <Projects />
+            <Pattern />
+
+            <Education />
             <Pattern />
 
             <Awards />
@@ -92,7 +101,7 @@ export default function Page() {
 
       <QuickActions />
 
-      <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} />
+      <Confetti datesWithoutYear={[USER.dateOfBirth]} />
 
       <ScrollTop className="bottom-[calc(4rem+env(safe-area-inset-bottom,0px))] lg:bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))]" />
     </>
